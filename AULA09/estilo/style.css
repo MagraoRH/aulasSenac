@@ -1,0 +1,48 @@
+/* -- Pricipal -- */
+
+.body {
+    background-color: rgb(53, 53, 53);
+}
+
+.center {
+    text-align: center;
+}
+
+.px {
+    font-size: 20px;
+}
+
+/* -- Class -- */
+
+h2 {
+    color: white;
+}
+
+p1 {
+    color: white;
+}
+
+h3,
+h4 {
+    color: white;
+}
+
+p.oblique {
+    font-style: oblique;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.direita {
+    text-align: right;
+}
+
+p.center {
+    text-align: center;
+}
+
+p.justidica {
+    text-align: justify;
+}

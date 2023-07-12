@@ -1,0 +1,101 @@
+<!-- Utilizado para definir que este documento segue as regras de sintaxe do HTML 5 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formatação</title>
+
+    <!-- Definição de codificação de caracteres. Recomenda-se usar sempre UTF-8 -->
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div>
+
+        <!-- Título centralizado -->
+        <h1 align="center">
+            <a href="../index.html">Início |</a>
+            <a href="pagina2.html">Página 2 |</a>
+            <a href="pagina3.html">Página 3 |</a>
+            <a href="pagina4.html">Página 4 |</a>
+            <a href="pagina5.html">Página 5 |</a>
+            <a href="pagina6.html">Página 6 |</a>
+            <a href="pagina7.html">Página 7 |</a>
+
+        </h1>
+
+        <!-- Elemento de linha horizontal -->
+        <hr>
+        <h1>Trabalho com formulário</h1>
+        <form action="cadastro.php" method="post">
+            <h2>Elementos Imput</h2>
+            <br>
+            <h3>Campo de texto</h3>
+            <label>Seu Nome:
+                <input type="text" name="nome">
+            </label>
+            <br>
+            <label>Seu sobrenome:
+                <input type="text" name="sobrenome">
+            </label>
+            <br>
+            <label>Senha:
+                <input type="password" name="senha">
+            </label>
+            <br>
+            <h3>Campo Radio</h3>
+            <label>
+                <input type="radio" name="tipo" value="PF">Pessoa Fisica
+            </label>
+            <label>
+                <input type="radio" name="tipoA" value="PJ">Pessoa Juridica
+            </label>
+            <h3>Campo Checkbox</h3>
+            <label>
+                <input type="checkbox" name="CNH" value="cnh">
+                Possui CNH
+            </label>
+            <label>
+                <input type="checkbox" name="passaporte" value="passaport">
+                Possui passaporte
+            </label>
+            <br>
+            <label>Campo de upload de arquivo
+                <input type="file" name="foto" accept="image/*">
+            </label>
+            <br>
+            <h2>Elemento textarea</h2>
+            <textarea name="obs" cols="50" rows="4"></textarea>
+            <br>
+            <h2>Elemento select</h2>
+            <select name="carro">
+                <option value="fusca">Fusca</option>
+                <option value="fiat147">Fiat147</option>
+                <option value="gol">Gol</option>
+            </select>
+            <br>
+            <h3>Botão limpar</h3>
+            <input type="reset" value="Limpar">
+            <br>
+            <h3>Botão enviar</h3>
+            <input type="submit" value="Enviar">
+        </form>
+        <hr>
+        <br>
+    </div>
+    <a href="https://pt-br.facebook.com/" target="black">
+        <img src="../imagens/logoface.png" alt="Facebook" width="68" height="68" align="left" hspace="8"
+            title="Facebook">
+    </a>
+    <a href="https://www.instagram.com/" target="black">
+        <img src="../imagens/logoinst.png" alt="Instagram" width="68" height="68" align="left" hspace="8"
+            title="Instagram">
+    </a>
+    <a href="https://twitter.com/" target="black">
+        <img src="../imagens/logotwi.png" alt="Twitter" width="68" height="68" align="left" hspace="8" title="Twitter">
+    </a>
+
+
+</body>
+
+</html>

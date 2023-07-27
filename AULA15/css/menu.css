@@ -1,0 +1,115 @@
+/*list-style:none; para retirar o ponto do marcador   */
+/*padding:10; defini o espaçamento da lateral esquerda    */
+#menu, #menu ul{
+	
+	padding:0;
+	list-style:none;
+}
+/*width:70%; defini tamanho da caixa do menu na largura   */
+/*margin:30px auto; defini margem do menu para com o resto do site  */
+/*border: 1px solid #000033; defini a borda de fundo  */
+/*background-image:linear-gradient(#444, #111); defini um fundo do menu, 
+utilizando o gradiente com duas cores  */
+/*border-radius:6px; defini a borda arrendodada do menu   */
+/*box-shadow:0 1px 1px #777; defini a sobra do menu   */
+#menu{
+	
+	width:72%;
+	margin:15px auto;
+	border: 1px solid #000033;
+	background-image:linear-gradient(#444, #222);
+	border-radius:6px;
+	box-shadow:0 1px 1px #777;
+	
+}
+/*#menu:before, #menu:after  
+before seletor insere algo antes do conteúdo de cada elemento selecionado. 
+ seletor :: after para inserir algo após o conteúdo
+ Propriedade content para especificar o conteúdo a ser inserido.
+ display:table; cria uma tabela do layout*/
+#menu:before, #menu:after{
+	content:" ";
+	display:table;
+}
+/*clear:both; propriedade clear do CSS especifica se um 
+elemento pode ter elementos flutuantes   */
+#menu:after{
+	clear:both;
+}
+#menu{
+	zoom:1
+}
+/*border-right:1px solid #222; defini borda a direita  
+ position:relative; defini posição do submenu*/
+#menu li{
+	float:left;
+	border-right:px solid #222;
+	position:relative;
+}
+/*padding:12px 30px; defini o espaço da largura e altura do link como menu
+color:#999; defini cor do link
+text-transform:uppercase; A text-transformpropriedade em CSS controla 
+maiúsculas e minúsculas de texto.
+lowercase torna todas as letras do texto selecionado em minúsculas.
+uppercase torna todas as letras do texto selecionado em maiúsculas.
+capitalize coloca em maiúscula a primeira letra de cada palavra no texto selecionado.
+none deixa o caso e a capitalização do texto exatamente como foi inserido.
+inherit fornece ao texto o caso e a capitalização de seu pai.
+text-decoration:none; retira o sublinhado do link
+*/
+#menu a{
+	float:left;
+	padding:12px 30px;
+	color:#999;
+	text-transform:uppercase;
+	text-decoration:none;
+	
+}
+/*color:#fafafa; para definir a cor no sublink
+:hover Selecione e estilize um link ao passar o mouse sobre ele*/
+#menu li:hover >a{
+	color:#fafafa;
+	
+}
+/*visibility:hidden; define se o submenu aparece
+position:absolute; para definir a posição fixa
+top:38px; defini a distancia do submenu*/
+/*background-image:linear-gradient(#444, #111); defini um fundo do menu, 
+utilizando o gradiente com duas cores  
+border-radius:3px; define bordas no submenu*/
+#menu ul{
+		
+	visibility:hidden;
+	position:absolute;
+	top:38px;
+	background-image:linear-gradient(#444, #111);
+	border-radius:4px;
+	
+}
+#menu li:hover>ul{
+	
+	visibility:visible;
+	
+}
+/*A declaração display: block faz com que o elemento HTML seja renderizado como bloco
+text-transform:none deixa o caso e a capitalização do texto exatamente como foi inserido.
+*/
+
+#menu ul a{
+	padding:10px;
+	width:130px;
+	display:block;
+	text-transform:none;
+}
+/*background-image:linear-gradient(#04acec, #0186ba); define a cor da caixa do submenu
+*/
+#menu ul a:hover{
+	
+	background-image:linear-gradient(#04acec, #0186ba);
+}
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+#menu,
+#menu ul {
+    padding: 0%;
+    list-style: none;
+    /* para retirar o ponto do listar */
+}
+
+#menu {
+    width: 63%;
+    margin: 30px auto;
+    border: 1px solid #000033;
+    background-image: linear-gradient(#444, #222);
+    /* para duas cores diferentes */
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #777;
+}
+
+#menu:before,
+#menu:after {
+    content: " ";
+    /* para especificar o conteudo a ser inserido */
+    display: table;
+    /* cria uma tabela do layout */
+    clear: both;
+    /* especifica um elemento flutuante */
+}
+
+#menu li {
+    float: left;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    padding: 12px 30px;
+    color: #999;
+    text-transform: uppercase;
+    /* controla texto em maiusculo e minusculo (uppercase= maiusculo / lowercase= minusculo / capitalizar= maiusculo na primeira letra)*/
+    text-decoration: none;
+}
+
+#menu li:hover a {
+    color: #fafafa;
+}
+
+#menu ul {
+    visibility: hidden;
+    /* define se o submenu aparece */
+    position: absolute;
+    /* define posiç'ão fixa */
+    top: 38px;
+    /* define a distancia do submenu */
+    background-image: linear-gradient(#444, #111);
+    border-radius: 4px;
+}
+
+#menu li:hover ul {
+    visibility: visible;
+
+}
+
+#menu ul a {
+    padding: 10px;
+    width: 130px;
+    display: block;
+    /* faz com que o elemento HTML seja renderizado como bloco */
+    text-transform: none;
+}
+
+#menu ul a:hover {
+    background-image: linear-gradient(#04acec, #0186ba);
+}

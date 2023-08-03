@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#menu {
+	width: 100%;
+	height: 60px;
+	background-color: #222;
+	font-family: Arial;
+}
+
+#menu ul {
+	list-style: none;
+	position: relative;
+}
+
+#menu ul li {
+	width: 120px;
+	float: left;
+}
+
+#menu a {
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #222;
+	color: #fff;
+}
+
+#menu ul ul {
+	position: absolute;
+	visibility: hidden;
+}
+
+#menu ul li:hover ul {
+	visibility: visible;
+}
+
+#menu a:hover {
+	background-color: #f4f4f4;
+	color: #555;
+}
+
+#menu ul ul li {
+	float: none;
+	border-bottom: solid 1px #ccc;
+}
+
+#menu ul ul li a {
+	background-color: green;
+}
+
+/* ---Formatando o caracter utilizado para fazer o botão do menu--- */
+label[for="bt_menu"] {
+	padding: 5px;
+	background-color: #222;
+	color: #fff;
+	text-align: left;
+	font-size: 30px;
+	cursor: pointer;
+	height: 50px;
+}
+
+/* ---Tirar o troço do lado do botão do caracter--- */
+#bt_menu {
+	display: none;
+}
+
+/* ---Utilizar ele apenas em tamanhos pré determinados--- */
+label[for="bt_menu"] {
+	display: none;
+}
+
+/* ---Determinando em qual scala o botão vai aparecer--- */
+@media(max-width: 800px) {
+	label[for="bt_menu"] {
+		display: block;
+	}
+}
+
+/* ---Aplicando em todos elementos do menu as configurações deste elemento--- */
+#bt_menu:checked~#menu {
+	margin-left: 0;
+	height: auto;
+}
+
+@media (max-width: 800px) {
+	#menu {
+		margin-left: -100%;/* ---Utilizar o caracter - pode diminuir o tamanho de algooooo !!!!!!!!!!!--- */
+		transition: all 1s;
+		height: auto;
+	}
+
+	#menu ul li {
+		width: 100%;
+		float: none;
+	}
+
+	#menu ul ul {
+		position: static;
+		overflow: hidden;/* ---Menu não aparece--- */
+		max-height: 0;
+		transition: all 4s;
+	}
+
+	#menu ul li:hover ul {
+		height: auto;
+		max-height: 200px;
+	}
+}
